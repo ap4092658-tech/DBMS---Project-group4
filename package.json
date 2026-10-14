@@ -1,27 +1,21 @@
 {
-  "name": "snapgrid",
+  "name": "snapgrid-frontend",
+  "private": true,
   "version": "1.0.0",
-  "description": "SnapGrid — Mini Instagram Clone for DBMS Project (MySQL + Express + React)",
+  "type": "module",
   "scripts": {
-    "install:all": "npm --prefix backend install && npm --prefix frontend install",
-    "setup": "npm run install:all && node database/init_db.js",
-    "backend": "npm --prefix backend run dev",
-    "frontend": "npm --prefix frontend run dev",
-    "backend:start": "npm --prefix backend start",
-    "frontend:build": "npm --prefix frontend run build",
-    "db:setup": "node database/init_db.js",
-    "start": "start-dev.bat"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [
-    "snapgrid",
-    "instagram-clone",
-    "mysql",
-    "dbms",
-    "express",
-    "react",
-    "vite",
-    "fullstack"
-  ],
-  "author": "Aditya Kharat",
-  "license": "MIT"
+  "dependencies": {
+    "axios": "^1.7.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.1"
+  }
 }
